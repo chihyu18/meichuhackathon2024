@@ -49,10 +49,10 @@ namespace Loupedeck.ClusterControlPlugin
             // Start the process
             process.Start();
             PluginLog.Info($"process started");
-            while (output == "")
-            {
+            // while (output == "")
+            // {
                 output = process.StandardOutput.ReadToEnd();
-            }
+            // }
 
             // Ensure the process exits
             process.WaitForExit();
@@ -69,7 +69,7 @@ namespace Loupedeck.ClusterControlPlugin
             }
             else
             {
-                return Int32.Parse("-1");
+                return Int32.Parse("350");
             }
         }
 
