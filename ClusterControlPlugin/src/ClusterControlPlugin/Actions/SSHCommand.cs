@@ -49,7 +49,6 @@ namespace Loupedeck.ClusterControlPlugin
             process.StartInfo.FileName = GetTerminalPath(); // Determines the terminal based on OS
             PluginLog.Info($"terminal path: {process.StartInfo.FileName}");
             process.StartInfo.Arguments = $"{sshCommand}"; // Command to run (e.g., "dir" in cmd)
-            // ssh {server}
 
             // Ensure we can interact with the terminal
             process.StartInfo.UseShellExecute = true;
@@ -62,19 +61,27 @@ namespace Loupedeck.ClusterControlPlugin
             process.Start();
             PluginLog.Info($"process started");
 
-            // // Read the terminal output (example: output of "dir" on Windows)
-            // string output = process.StandardOutput.ReadToEnd();
-            // // Console.WriteLine(output);
-            // PluginLog.Info($"terminal output: {output}");
+            /* if redirect?
+            // Read the terminal output (example: output of "dir" on Windows)
+            string output = process.StandardOutput.ReadToEnd();
+            // Console.WriteLine(output);
+            PluginLog.Info($"terminal output: {output}");
 
-            // // You can also send further commands to the terminal:
-            // StreamWriter inputWriter = process.StandardInput;
-            // inputWriter.WriteLine("echo Hello from C#"); // Send command
-            // inputWriter.Flush();
+            // You can also send further commands to the terminal:
+            StreamWriter inputWriter = process.StandardInput;
+            inputWriter.WriteLine("echo Hello from C#"); // Send command
+            inputWriter.Flush();
 
-            // // Capture the new output after the command
-            // string newOutput = process.StandardOutput.ReadToEnd();
-            // Console.WriteLine(newOutput);
+            // Capture the new output after the command
+            string newOutput = process.StandardOutput.ReadToEnd();
+            Console.WriteLine(newOutput);
+            */
+            
+            // Interactive loop to send commands and get output
+            StreamWriter inputWriter = process.StandardInput;
+            StreamReader outputReader = process.StandardOutput;
+            StreamReader errorReader = process.StandardError;
+            
 
             // while (true)
             // {
@@ -96,10 +103,14 @@ namespace Loupedeck.ClusterControlPlugin
 
             //     if (!string.IsNullOrEmpty(error))
             //         Console.WriteLine("Error: " + error);
-            // }();
+            // }
+            
 
             // Ensure the process exits
             process.WaitForExit();
+
+            inputWriter.Close();
+            outputReader.Close();
         }
 
         // Helper method to get the terminal path based on the operating system
