@@ -7,17 +7,17 @@ namespace Loupedeck.ClusterControlPlugin
 
     // This class implements an example adjustment that counts the rotation ticks of a dial.
 
-    public class GPUpowerAdjustment : PluginDynamicAdjustment
+    public class GPU2powerAdjustment : PluginDynamicAdjustment
     {
         // This variable holds the current value of the counter.
         private Int32 _counter = 0;
         private Int32 _max_power = 350;
         private Timer _timer;
-        private String _sshCommand = "nthuscc@192.168.176.33";
+        private String _sshCommand = "-J nthuscc@192.168.176.33 s6u-cn02";
 
         // Initializes the adjustment class.
         // When `hasReset` is set to true, a reset command is automatically created for this adjustment.
-        public GPUpowerAdjustment()
+        public GPU2powerAdjustment()
             : base(displayName: "GPU power", description: "GPU power adjustment", groupName: "Adjustments", hasReset: true)
         {
             this._timer = new Timer(800);
