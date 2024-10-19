@@ -1,0 +1,465 @@
+{
+    "runtimeTarget": {
+        "name": ".NETCoreApp,Version=v8.0",
+        "signature": ""
+    },
+    "compilationOptions": {},
+    "targets": {
+        ".NETCoreApp,Version=v8.0": {
+            "LoupedeckPluginTool/6.0.0.20035": {
+                "dependencies": {
+                    "LoupedeckPluginToolbox": "6.0.0.20035",
+                    "LoupedeckShared": "6.0.0.20035",
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "PluginApi": "6.0.0.20035",
+                    "StyleCop.Analyzers": "1.2.0-beta.556"
+                },
+                "runtime": {
+                    "LoupedeckPluginTool.dll": {}
+                }
+            },
+            "DotNetZip/1.16.0": {
+                "dependencies": {
+                    "System.Security.Permissions": "4.7.0",
+                    "System.Text.Encoding.CodePages": "4.7.1"
+                },
+                "runtime": {
+                    "lib/netstandard2.0/DotNetZip.dll": {
+                        "assemblyVersion": "1.16.0.0",
+                        "fileVersion": "1.16.0.0"
+                    }
+                }
+            },
+            "JsonSubTypes/2.0.1": {
+                "dependencies": {
+                    "Newtonsoft.Json": "13.0.3"
+                },
+                "runtime": {
+                    "lib/netstandard2.0/JsonSubTypes.dll": {
+                        "assemblyVersion": "2.0.1.0",
+                        "fileVersion": "2.0.1.0"
+                    }
+                }
+            },
+            "Microsoft.CodeAnalysis.NetAnalyzers/8.0.0": {},
+            "Microsoft.NETCore.Platforms/3.1.12": {},
+            "Microsoft.Win32.SystemEvents/4.7.0": {
+                "dependencies": {
+                    "Microsoft.NETCore.Platforms": "3.1.12"
+                },
+                "runtime": {
+                    "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+                        "assemblyVersion": "4.0.2.0",
+                        "fileVersion": "4.700.19.56404"
+                    }
+                },
+                "runtimeTargets": {
+                    "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+                        "rid": "win",
+                        "assetType": "runtime",
+                        "assemblyVersion": "4.0.2.0",
+                        "fileVersion": "4.700.19.56404"
+                    }
+                }
+            },
+            "Newtonsoft.Json/13.0.3": {
+                "runtime": {
+                    "lib/net6.0/Newtonsoft.Json.dll": {
+                        "assemblyVersion": "13.0.0.0",
+                        "fileVersion": "13.0.3.27908"
+                    }
+                }
+            },
+            "Sentry/4.2.1": {
+                "runtime": {
+                    "lib/net8.0/Sentry.dll": {
+                        "assemblyVersion": "4.2.1.0",
+                        "fileVersion": "4.2.1.0"
+                    }
+                }
+            },
+            "SkiaSharp/2.88.8": {
+                "dependencies": {
+                    "SkiaSharp.NativeAssets.Win32": "2.88.8",
+                    "SkiaSharp.NativeAssets.macOS": "2.88.8"
+                },
+                "runtime": {
+                    "lib/net6.0/SkiaSharp.dll": {
+                        "assemblyVersion": "2.88.0.0",
+                        "fileVersion": "2.88.8.0"
+                    }
+                }
+            },
+            "SkiaSharp.NativeAssets.macOS/2.88.8": {
+                "runtimeTargets": {
+                    "runtimes/osx/native/libSkiaSharp.dylib": {
+                        "rid": "osx",
+                        "assetType": "native",
+                        "fileVersion": "0.0.0.0"
+                    }
+                }
+            },
+            "SkiaSharp.NativeAssets.Win32/2.88.8": {
+                "runtimeTargets": {
+                    "runtimes/win-arm64/native/libSkiaSharp.dll": {
+                        "rid": "win-arm64",
+                        "assetType": "native",
+                        "fileVersion": "0.0.0.0"
+                    },
+                    "runtimes/win-x64/native/libSkiaSharp.dll": {
+                        "rid": "win-x64",
+                        "assetType": "native",
+                        "fileVersion": "0.0.0.0"
+                    },
+                    "runtimes/win-x86/native/libSkiaSharp.dll": {
+                        "rid": "win-x86",
+                        "assetType": "native",
+                        "fileVersion": "0.0.0.0"
+                    }
+                }
+            },
+            "SkiaSharp.Svg/1.60.0": {
+                "dependencies": {
+                    "SkiaSharp": "2.88.8"
+                },
+                "runtime": {
+                    "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {
+                        "assemblyVersion": "1.60.0.0",
+                        "fileVersion": "1.60.0.0"
+                    }
+                }
+            },
+            "StyleCop.Analyzers/1.2.0-beta.556": {
+                "dependencies": {
+                    "StyleCop.Analyzers.Unstable": "1.2.0.556"
+                }
+            },
+            "StyleCop.Analyzers.Unstable/1.2.0.556": {},
+            "System.Drawing.Common/4.7.3": {
+                "dependencies": {
+                    "Microsoft.NETCore.Platforms": "3.1.12",
+                    "Microsoft.Win32.SystemEvents": "4.7.0"
+                },
+                "runtime": {
+                    "lib/netstandard2.0/System.Drawing.Common.dll": {
+                        "assemblyVersion": "4.0.0.2",
+                        "fileVersion": "4.6.29719.1"
+                    }
+                },
+                "runtimeTargets": {
+                    "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+                        "rid": "unix",
+                        "assetType": "runtime",
+                        "assemblyVersion": "4.0.2.3",
+                        "fileVersion": "4.700.21.51508"
+                    },
+                    "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+                        "rid": "win",
+                        "assetType": "runtime",
+                        "assemblyVersion": "4.0.2.3",
+                        "fileVersion": "4.700.21.51508"
+                    }
+                }
+            },
+            "System.Security.AccessControl/4.7.0": {
+                "dependencies": {
+                    "Microsoft.NETCore.Platforms": "3.1.12",
+                    "System.Security.Principal.Windows": "4.7.0"
+                }
+            },
+            "System.Security.Cryptography.ProtectedData/8.0.0": {
+                "runtime": {
+                    "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+                        "assemblyVersion": "8.0.0.0",
+                        "fileVersion": "8.0.23.53103"
+                    }
+                }
+            },
+            "System.Security.Permissions/4.7.0": {
+                "dependencies": {
+                    "System.Security.AccessControl": "4.7.0",
+                    "System.Windows.Extensions": "4.7.0"
+                },
+                "runtime": {
+                    "lib/netcoreapp3.0/System.Security.Permissions.dll": {
+                        "assemblyVersion": "4.0.3.0",
+                        "fileVersion": "4.700.19.56404"
+                    }
+                }
+            },
+            "System.Security.Principal.Windows/4.7.0": {},
+            "System.Text.Encoding.CodePages/4.7.1": {
+                "dependencies": {
+                    "Microsoft.NETCore.Platforms": "3.1.12"
+                }
+            },
+            "System.Windows.Extensions/4.7.0": {
+                "dependencies": {
+                    "System.Drawing.Common": "4.7.3"
+                },
+                "runtime": {
+                    "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+                        "assemblyVersion": "4.0.1.0",
+                        "fileVersion": "4.700.19.56404"
+                    }
+                },
+                "runtimeTargets": {
+                    "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+                        "rid": "win",
+                        "assetType": "runtime",
+                        "assemblyVersion": "4.0.1.0",
+                        "fileVersion": "4.700.19.56404"
+                    }
+                }
+            },
+            "YamlDotNet/15.1.2": {
+                "runtime": {
+                    "lib/net8.0/YamlDotNet.dll": {
+                        "assemblyVersion": "15.0.0.0",
+                        "fileVersion": "15.1.2.0"
+                    }
+                }
+            },
+            "LogiConnection/6.0.0.20035": {
+                "dependencies": {
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "StyleCop.Analyzers": "1.2.0-beta.556"
+                },
+                "runtime": {
+                    "LogiConnection.dll": {}
+                }
+            },
+            "LoupedeckPluginToolbox/6.0.0.20035": {
+                "dependencies": {
+                    "LoupedeckShared": "6.0.0.20035",
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "PluginApi": "6.0.0.20035",
+                    "StyleCop.Analyzers": "1.2.0-beta.556",
+                    "YamlDotNet": "15.1.2"
+                },
+                "runtime": {
+                    "LoupedeckPluginToolbox.dll": {}
+                }
+            },
+            "LoupedeckShared/6.0.0.20035": {
+                "dependencies": {
+                    "JsonSubTypes": "2.0.1",
+                    "LogiConnection": "6.0.0.20035",
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "PluginApi": "6.0.0.20035",
+                    "Sentry": "4.2.1",
+                    "StyleCop.Analyzers": "1.2.0-beta.556",
+                    "System.Security.Cryptography.ProtectedData": "8.0.0"
+                },
+                "runtime": {
+                    "LoupedeckShared.dll": {}
+                }
+            },
+            "PluginApi/6.0.0.20035": {
+                "dependencies": {
+                    "DotNetZip": "1.16.0",
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "Microsoft.NETCore.Platforms": "3.1.12",
+                    "Newtonsoft.Json": "13.0.3",
+                    "SkiaSharp": "2.88.8",
+                    "SkiaSharp.Svg": "1.60.0",
+                    "StyleCop.Analyzers": "1.2.0-beta.556",
+                    "System.Drawing.Common": "4.7.3",
+                    "YamlDotNet": "15.1.2",
+                    "websocket-sharp": "6.0.0.20035"
+                },
+                "runtime": {
+                    "PluginApi.dll": {}
+                }
+            },
+            "websocket-sharp/6.0.0.20035": {
+                "dependencies": {
+                    "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+                    "StyleCop.Analyzers": "1.2.0-beta.556"
+                },
+                "runtime": {
+                    "websocket-sharp.dll": {}
+                }
+            }
+        }
+    },
+    "libraries": {
+        "LoupedeckPluginTool/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        },
+        "DotNetZip/1.16.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-CS9sjjXF23FLIbwlLT5k\/jXBYxVnLMn01lyAvN\/hxFM+UDvSicjTPB9ZMA+Wp\/QlvBPbD2pzkAXUp1O50gP\/Lw==",
+            "path": "dotnetzip\/1.16.0",
+            "hashPath": "dotnetzip.1.16.0.nupkg.sha512"
+        },
+        "JsonSubTypes/2.0.1": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-1Po+Ypf0SjCeEKx5+C89Nb5OgTcqNvfS3uTI46MUM+KEp6Rq\/M0h+vVsTUt\/6DFRwZMTpsAJM4yJrZmEObVANA==",
+            "path": "jsonsubtypes\/2.0.1",
+            "hashPath": "jsonsubtypes.2.0.1.nupkg.sha512"
+        },
+        "Microsoft.CodeAnalysis.NetAnalyzers/8.0.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-DxiTgkCl3CGq1rYmBX2wjY7XGbxiBdL4J+\/AJIAFLKy5z70NxhnVRnPghnicXZ8oF6JKVXlW3xwznRbI3ioEKg==",
+            "path": "microsoft.codeanalysis.netanalyzers\/8.0.0",
+            "hashPath": "microsoft.codeanalysis.netanalyzers.8.0.0.nupkg.sha512"
+        },
+        "Microsoft.NETCore.Platforms/3.1.12": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-tjuwS4AlC3Hr9TQTLopVeSc2VDTbVh89UOj8RpCurS0HyngDLQ8exqmCTsSs90DQEMYkYCFSqxCzZ9IggIVzOQ==",
+            "path": "microsoft.netcore.platforms\/3.1.12",
+            "hashPath": "microsoft.netcore.platforms.3.1.12.nupkg.sha512"
+        },
+        "Microsoft.Win32.SystemEvents/4.7.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
+            "path": "microsoft.win32.systemevents\/4.7.0",
+            "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+        },
+        "Newtonsoft.Json/13.0.3": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix\/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+            "path": "newtonsoft.json\/13.0.3",
+            "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+        },
+        "Sentry/4.2.1": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-4MXZ0dwc5QDnTElAzDLXGGRa+VoywpmU2CU6gZ3o2NAYpzMA0VaiLVKNQ6bH+KW5Yv7JpOt+By7OeQOnvuQong==",
+            "path": "sentry\/4.2.1",
+            "hashPath": "sentry.4.2.1.nupkg.sha512"
+        },
+        "SkiaSharp/2.88.8": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-bRkp3uKp5ZI8gXYQT57uKwil1uobb2p8c69n7v5evlB\/2JNcMAXVcw9DZAP5Ig3WSvgzGm2YSn27UVeOi05NlA==",
+            "path": "skiasharp\/2.88.8",
+            "hashPath": "skiasharp.2.88.8.nupkg.sha512"
+        },
+        "SkiaSharp.NativeAssets.macOS/2.88.8": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-6Kn5TSkKlfyS6azWHF3Jk2sW5C4jCE5uSshM\/5AbfFrR+5n6qM5XEnz9h4VaVl7LTxBvHvMkuPb\/3bpbq0vxTw==",
+            "path": "skiasharp.nativeassets.macos\/2.88.8",
+            "hashPath": "skiasharp.nativeassets.macos.2.88.8.nupkg.sha512"
+        },
+        "SkiaSharp.NativeAssets.Win32/2.88.8": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-O9QXoWEXA+6cweR4h3BOnwMz+pO9vL9mXdjLrpDd0w1QzCgWmLQBxa1VgySDITiH7nQndrDG1h6937zm9pLj1Q==",
+            "path": "skiasharp.nativeassets.win32\/2.88.8",
+            "hashPath": "skiasharp.nativeassets.win32.2.88.8.nupkg.sha512"
+        },
+        "SkiaSharp.Svg/1.60.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-rTneyM6mt0w2xCCampFlkO3mGFIwGEJo7L2X3JOdyeMCZDQkyqv7m9kZfA89kLSErXErFnY72TZsryzqTIiT7g==",
+            "path": "skiasharp.svg\/1.60.0",
+            "hashPath": "skiasharp.svg.1.60.0.nupkg.sha512"
+        },
+        "StyleCop.Analyzers/1.2.0-beta.556": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-llRPgmA1fhC0I0QyFLEcjvtM2239QzKr\/tcnbsjArLMJxJlu0AA5G7Fft0OI30pHF3MW63Gf4aSSsjc5m82J1Q==",
+            "path": "stylecop.analyzers\/1.2.0-beta.556",
+            "hashPath": "stylecop.analyzers.1.2.0-beta.556.nupkg.sha512"
+        },
+        "StyleCop.Analyzers.Unstable/1.2.0.556": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-zvn9Mqs\/ox\/83cpYPignI8hJEM2A93s2HkHs8HYMOAQW0PkampyoErAiIyKxgTLqbbad29HX\/shv\/6LGSjPJNQ==",
+            "path": "stylecop.analyzers.unstable\/1.2.0.556",
+            "hashPath": "stylecop.analyzers.unstable.1.2.0.556.nupkg.sha512"
+        },
+        "System.Drawing.Common/4.7.3": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-B3+wwhAeoUQ6KeshWSq3IRLQiMoqPEzSHzyVyxTI\/EbYuqIp90lXrRISlip2AF+5tj74ycIVPpnRY4M424HahA==",
+            "path": "system.drawing.common\/4.7.3",
+            "hashPath": "system.drawing.common.4.7.3.nupkg.sha512"
+        },
+        "System.Security.AccessControl/4.7.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+            "path": "system.security.accesscontrol\/4.7.0",
+            "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+        },
+        "System.Security.Cryptography.ProtectedData/8.0.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+            "path": "system.security.cryptography.protecteddata\/8.0.0",
+            "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+        },
+        "System.Security.Permissions/4.7.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-dkOV6YYVBnYRa15\/yv004eCGRBVADXw8qRbbNiCn\/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
+            "path": "system.security.permissions\/4.7.0",
+            "hashPath": "system.security.permissions.4.7.0.nupkg.sha512"
+        },
+        "System.Security.Principal.Windows/4.7.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h\/70vyYMDYs85lwEI+LngEONe\/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+            "path": "system.security.principal.windows\/4.7.0",
+            "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+        },
+        "System.Text.Encoding.CodePages/4.7.1": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-i2fOvznVVgOOTLUz8FgSap\/MsR98I4Iaoz99VXcOW\/e7Y2OdY42zhYpBYpZyivk5alYY\/UsOWAVswhtjxceodA==",
+            "path": "system.text.encoding.codepages\/4.7.1",
+            "hashPath": "system.text.encoding.codepages.4.7.1.nupkg.sha512"
+        },
+        "System.Windows.Extensions/4.7.0": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv\/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
+            "path": "system.windows.extensions\/4.7.0",
+            "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+        },
+        "YamlDotNet/15.1.2": {
+            "type": "package",
+            "serviceable": true,
+            "sha512": "sha512-qeX0XhzOIcQEvnI5JxnPaIwcINwyY4Qy\/LXhSfsdHkFrl9F41AT52UFfy2nIE7kgrhMg+cP7xuS+GtPJhmHmTA==",
+            "path": "yamldotnet\/15.1.2",
+            "hashPath": "yamldotnet.15.1.2.nupkg.sha512"
+        },
+        "LogiConnection/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        },
+        "LoupedeckPluginToolbox/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        },
+        "LoupedeckShared/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        },
+        "PluginApi/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        },
+        "websocket-sharp/6.0.0.20035": {
+            "type": "project",
+            "serviceable": false,
+            "sha512": ""
+        }
+    }
+}
