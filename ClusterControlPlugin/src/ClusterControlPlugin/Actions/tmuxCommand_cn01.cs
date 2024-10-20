@@ -73,6 +73,18 @@ namespace Loupedeck.ClusterControlPlugin
                     OpenTerminal($"ssh -t {this.userName}@{this.serverIp} 'tmux attach-session -t 4 || tmux new-session -s 4'");
                     PluginLog.Info($"Switch to session 4!");
                     break;
+                case "5":
+                    OpenTerminal($"ssh -t {this.userName}@{this.serverIp} 'tmux attach-session -t 5 || tmux new-session -s 5'");
+                    PluginLog.Info($"Switch to session 5!");
+                    break;
+                case "6":
+                    OpenTerminal($"ssh -t {this.userName}@{this.serverIp} 'tmux attach-session -t 6 || tmux new-session -s 6'");
+                    PluginLog.Info($"Switch to session 6!");
+                    break;
+                case "7":
+                    OpenTerminal($"ssh -t {this.userName}@{this.serverIp} 'tmux attach-session -t 7 || tmux new-session -s 7'");
+                    PluginLog.Info($"Switch to session 7!");
+                    break;
                 default:
                     // String[] parsedArg = actionParameter.Split(' ');
                     // this.userName = parsedArg[0];

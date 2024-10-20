@@ -11,12 +11,12 @@ namespace Loupedeck.ClusterControlPlugin
         // This variable holds the current value of the counter.
         private Int32 _counter = 0;
         private Timer _timer;
-        private String _sshCommand = "nthuscc@192.168.176.33";
+        private String _sshCommand = "-J nthuscc@192.168.176.33 s6u-cn02";
 
         // Initializes the adjustment class.
         // When `hasReset` is set to true, a reset command is automatically created for this adjustment.
         public Fan2Adjustment()
-            : base(displayName: "Fan Speed", description: "Adjust fan speed percent", groupName: "Adjustments", hasReset: true)
+            : base(displayName: "Fan2 Speed", description: "Adjust fan2 speed percent", groupName: "Adjustments", hasReset: true)
         {
             // create adjustment confirm timer
             this._timer = new Timer(800);

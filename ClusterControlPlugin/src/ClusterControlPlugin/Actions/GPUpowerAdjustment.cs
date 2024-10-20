@@ -131,7 +131,7 @@ namespace Loupedeck.ClusterControlPlugin
             // Configure the process to start the terminal
             process.StartInfo.FileName = GetTerminalPath(); // Determines the terminal based on OS
             PluginLog.Info($"terminal path: {process.StartInfo.FileName}");
-            process.StartInfo.Arguments = $"{sshCommand}"; // Command to run (e.g., "dir" in cmd)
+            process.StartInfo.Arguments = $"ssh -t {sshCommand}"; // Command to run (e.g., "dir" in cmd)
             // ssh {server}
 
             // config fan speed
@@ -141,7 +141,7 @@ namespace Loupedeck.ClusterControlPlugin
             }
             else
             {
-                process.StartInfo.Arguments += $" 'sudo vidia-smi -pl {this._max_power}'";    // auto
+                process.StartInfo.Arguments += $" 'sudo nvidia-smi -pl {this._max_power}'";    // auto
             }
 
             // Ensure we can interact with the terminal

@@ -13,12 +13,12 @@ namespace Loupedeck.ClusterControlPlugin
         private Int32 _counter = 0;
         private Int32 _max_power = 350;
         private Timer _timer;
-        private String _sshCommand = "-J nthuscc@192.168.176.33 s6u-cn02";
+        private String _sshCommand = "-J nthuscc@192.168.176.33 nthuscc@s6u-cn02";
 
         // Initializes the adjustment class.
         // When `hasReset` is set to true, a reset command is automatically created for this adjustment.
         public GPU2powerAdjustment()
-            : base(displayName: "GPU power", description: "GPU power adjustment", groupName: "Adjustments", hasReset: true)
+            : base(displayName: "GPU2 power", description: "GPU2  power adjustment", groupName: "Adjustments", hasReset: true)
         {
             this._timer = new Timer(800);
             this._timer.Elapsed += new ElapsedEventHandler(this.CheckTimer);
@@ -131,7 +131,7 @@ namespace Loupedeck.ClusterControlPlugin
             // Configure the process to start the terminal
             process.StartInfo.FileName = GetTerminalPath(); // Determines the terminal based on OS
             PluginLog.Info($"terminal path: {process.StartInfo.FileName}");
-            process.StartInfo.Arguments = $"{sshCommand}"; // Command to run (e.g., "dir" in cmd)
+            process.StartInfo.Arguments = $"ssh {sshCommand}"; // Command to run (e.g., "dir" in cmd)
             // ssh {server}
 
             // config fan speed
@@ -141,7 +141,7 @@ namespace Loupedeck.ClusterControlPlugin
             }
             else
             {
-                process.StartInfo.Arguments += $" 'sudo vidia-smi -pl {this._max_power}'";    // auto
+                process.StartInfo.Arguments += $" 'sudo nvidia-smi -pl {this._max_power}'";    // auto
             }
 
             // Ensure we can interact with the terminal
